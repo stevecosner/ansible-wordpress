@@ -1,0 +1,14 @@
+---
+
+- name: install wordpress
+
+  hosts: servers
+  become: yes
+  remote_user: steve
+  
+  roles:
+    - server
+    - php
+    - mysql
+    - wordpress
+
